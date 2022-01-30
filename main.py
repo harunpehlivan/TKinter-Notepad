@@ -12,17 +12,15 @@ class Window:
 		self.root = root
 		self.root.geometry('650x490')
 		self.root.title("TKinter Notepad")
-		
-		
+
+
 		# Create textspace
 		self.textspace = Text(self.root)
 		self.textspace.grid(row=0, column = 0)
-		
+
 		# Create open and save buttons
 		Button(self.root, text = "Save", command = self.savefile).grid(row=0, column = 1)
 		Button(self.root, text = "Open", command = self.openfile).grid(row=0, column = 2)
-		
-		pass
 	
 	def savefile(self):
 		savegui = Tk()
